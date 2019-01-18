@@ -15,6 +15,7 @@
 # ========
 # Binaries
 # ========
+GREP=/bin/grep
 XFCONFQUERY=/usr/bin/xfconf-query
 
 
@@ -22,3 +23,4 @@ XFCONFQUERY=/usr/bin/xfconf-query
 # Loop over list of properties to set to
 # absoluted path of wallpaper image.
 #
+${XFCONFQUERY} -c xfce4-desktop -l | ${GREP} "last-image$"
