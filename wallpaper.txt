@@ -1,6 +1,6 @@
 wallpaper.txt
 Created Tue Jan 15 13:57:25 AKST 2019
-by Raymond E. Marcil <ray.marcil@alaska.gov>
+by Raymond E. Marcil <marcilr@gmail.com>
 
 
 Xfce wallpaper
