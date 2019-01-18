@@ -4,3 +4,10 @@ by Raymond E. Marcil <marcilr@gmail.com>
 
 
 Wallpaper related links
+
+
+Links
+=====
+set the desktop wallpaper under Xfce4
+Has xfconf-query syntax for setting wallpaper
+https://ubuntuincident.wordpress.com/2015/03/08/set-the-desktop-wallpaper-under-xfce4/
