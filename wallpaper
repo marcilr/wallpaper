@@ -56,10 +56,10 @@ random() {
   debug "random() start"
 
   #
-  # FIXME: Need this to scan for:
-  #        gif, jpg, jpeg, png
+  # NOTE: Could update ls to find below for recursive operation
+  #       on wallpaper directory.
   #
-  ${LS} ${WALLPAPERDIR}/*.jpg | ${SORT} -R | ${TAIL} -$N | while read FILE; do
+  ${LS} ${WALLPAPERDIR}/*.{gif,jpg,jpeg,png} | ${SORT} -R | ${TAIL} -$N | while read FILE; do
 
     debug "random() FILE: ${FILE}"
 
