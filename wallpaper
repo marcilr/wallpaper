@@ -52,6 +52,12 @@ random() {
 
   debug "random() start"
 
+  ls | sort -R | tail -$N |while read FILE; do
+
+    debug "random() FILE: ${FILE}"
+
+  done
+
   debug "random() end"
 
 }
@@ -63,8 +69,7 @@ random() {
 
 debug "MAIN *** start ***"
 
-#ls ${WALLPAPER}
-
+random
 
 
 #
