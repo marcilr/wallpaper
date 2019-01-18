@@ -36,6 +36,7 @@ WALLPAPERDIR=~/.wallpaper
 GREP=/bin/grep
 LS=/bin/ls
 SORT=/usr/bin/sort
+TAIL=/usr/bin/tail
 XFCONFQUERY=/usr/bin/xfconf-query
 
 
@@ -54,7 +55,7 @@ random() {
 
   debug "random() start"
 
-  ${LS} | ${SORT} -R | tail -$N |while read FILE; do
+  ${LS} | ${SORT} -R | ${TAIL} -$N | while read FILE; do
 
     debug "random() FILE: ${FILE}"
 
