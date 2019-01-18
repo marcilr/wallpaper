@@ -55,7 +55,7 @@ random() {
 
   debug "random() start"
 
-  ${LS} ${WALLPAPERDIR} | ${SORT} -R | ${TAIL} -$N | while read FILE; do
+  ${LS} ${WALLPAPERDIR}/*.jpg | ${SORT} -R | ${TAIL} -$N | while read FILE; do
 
     debug "random() FILE: ${FILE}"
 
