@@ -55,6 +55,10 @@ random() {
 
   debug "random() start"
 
+  #
+  # FIXME: Need this to scan for:
+  #        gif, jpg, jpeg, png
+  #
   ${LS} ${WALLPAPERDIR}/*.jpg | ${SORT} -R | ${TAIL} -$N | while read FILE; do
 
     debug "random() FILE: ${FILE}"
