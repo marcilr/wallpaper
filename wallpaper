@@ -9,12 +9,19 @@
 # xfce4-panel 4.12.1 (Xfce 4.12)
 # ...
 # $
-$
+#
 # Links
 # =====
 # set the desktop wallpaper under Xfce4
 # https://ubuntuincident.wordpress.com/2015/03/08/set-the-desktop-wallpaper-under-xfce4/
 #
+
+# =============
+# Configuration
+# =============
+
+# Directory with wallpaper to randomly select and set
+WALLPAPERDIR=~/.wallpaper
 
 
 # ========
@@ -22,6 +29,8 @@ $
 # ========
 GREP=/bin/grep
 XFCONFQUERY=/usr/bin/xfconf-query
+
+ls  ${WALLPAPER}
 
 
 #
