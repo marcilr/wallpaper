@@ -1,0 +1,18 @@
+wallpaper.txt
+Created Tue Jan 15 13:57:25 AKST 2019
+by Raymond E. Marcil <ray.marcil@alaska.gov>
+
+
+Xfce wallpaper
+
+
+List wallpaper properties:
+  $ apt-cache search gsettings
+
+
+Set wallpaper image:
+  $ xfconf-query --channel xfce4-desktop --property \
+  /backdrop/screen0/monitor0/image-path \
+  --set /usr/share/backgrounds/xfce/xfce-blue.jpg
+
+However, the above does *not* work.
