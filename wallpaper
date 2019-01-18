@@ -20,6 +20,12 @@
 # Configuration
 # =============
 
+#
+# Enable debugging by assigning DEBUG to any value
+# i.e. To display just comment out DEBUG.
+#
+DEBUG=true
+
 # Directory with wallpaper to randomly select and set
 WALLPAPERDIR=~/.wallpaper
 
@@ -35,10 +41,7 @@ XFCONFQUERY=/usr/bin/xfconf-query
 # debug()
 #
 debug() {
-  if [ "${DEBUG}" != "0" ]; then
-    echo "debug() ${1}"
-  fi
-
+  [[ ! -z "${DEBUG}" ]] && echo "debug() ${1}"
 }
 
 
@@ -46,7 +49,10 @@ debug() {
 # MAIN
 # ==============================
 
-ls  ${WALLPAPER}
+debug "MAIN *** start ***"
+
+#ls ${WALLPAPER}
+
 
 
 #
@@ -54,5 +60,8 @@ ls  ${WALLPAPER}
 # absoluted path of wallpaper image.
 #
 ${XFCONFQUERY} -c xfce4-desktop -l | ${GREP} "last-image$" | while read LASTIMAGE; do
-  echo "LASTIMAGE: ${LASTIMAGE}"
+  debug "MAIN LASTIMAGE: ${LASTIMAGE}"
 done
+
+debug "MAIN *** end ***"
+
