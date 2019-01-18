@@ -55,7 +55,7 @@ random() {
 
   debug "random() start"
 
-  ${LS} | ${SORT} -R | ${TAIL} -$N | while read FILE; do
+  ${LS} ${WALLPAPERDIR} | ${SORT} -R | ${TAIL} -$N | while read FILE; do
 
     debug "random() FILE: ${FILE}"
 
