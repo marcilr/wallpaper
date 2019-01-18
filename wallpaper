@@ -30,6 +30,22 @@ WALLPAPERDIR=~/.wallpaper
 GREP=/bin/grep
 XFCONFQUERY=/usr/bin/xfconf-query
 
+
+#
+# debug()
+#
+debug() {
+  if [ "${DEBUG}" != "0" ]; then
+    echo "debug() ${1}"
+  fi
+
+}
+
+
+# ===============================
+# MAIN
+# ==============================
+
 ls  ${WALLPAPER}
 
 
