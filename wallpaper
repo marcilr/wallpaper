@@ -34,6 +34,7 @@ WALLPAPERDIR=~/.wallpaper
 # Binaries
 # ========
 GREP=/bin/grep
+LS=/bin/ls
 XFCONFQUERY=/usr/bin/xfconf-query
 
 
@@ -52,7 +53,7 @@ random() {
 
   debug "random() start"
 
-  ls | sort -R | tail -$N |while read FILE; do
+  ${LS} | sort -R | tail -$N |while read FILE; do
 
     debug "random() FILE: ${FILE}"
 
