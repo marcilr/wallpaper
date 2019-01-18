@@ -3,8 +3,13 @@
 # Created Fri Jan 18 10:25:13 AKST 2019
 # by Raymond E. Marcil <marcilr@gmaik.com>
 #
-# Script to set backfground wallpaper under Xfce
+# Script to set backfground wallpaper under Xfce v4.12
 #
+# $ xfce4-panel --version
+# xfce4-panel 4.12.1 (Xfce 4.12)
+# ...
+# $
+$
 # Links
 # =====
 # set the desktop wallpaper under Xfce4
