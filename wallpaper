@@ -28,4 +28,6 @@ XFCONFQUERY=/usr/bin/xfconf-query
 # Loop over list of properties to set to
 # absoluted path of wallpaper image.
 #
-${XFCONFQUERY} -c xfce4-desktop -l | ${GREP} "last-image$"
+${XFCONFQUERY} -c xfce4-desktop -l | ${GREP} "last-image$" | while read LASTIMAGE; do
+  echo "LASTIMAGE: ${LASTIMAGE}"
+done
