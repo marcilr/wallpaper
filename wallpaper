@@ -54,11 +54,15 @@ random() {
   # NOTE: Could update ls to find below for recursive operation
   #       on wallpaper directory.
   #
-  ${LS} ${WALLPAPERDIR}/*.{gif,jpg,jpeg,png} | ${SORT} -R | ${TAIL} -$N | while read FILE; do
+  #${LS} ${WALLPAPERDIR}/*.{gif,jpg,jpeg,png} | ${SORT} -R | ${TAIL} -$N | while read FILE; do
+  #  debug "random() FILE: ${FILE}"
+  #done
 
-    debug "random() FILE: ${FILE}"
+  # Get file name of a single random image file
+  FILE=`${LS} ${WALLPAPERDIR}/*.{gif,jpg,jpeg,png} | ${SORT} -R | ${TAIL} -n1`
 
-  done
+  debug "random() FILE: ${FILE}"
+
 
   debug "random() end"
 
@@ -73,6 +77,7 @@ debug "MAIN *** start ***"
 
 random
 
+debug "MAIN FILE: ${FILE}"
 
 #
 # Loop over list of properties to set to
