@@ -85,6 +85,12 @@ debug "MAIN FILE: ${FILE}"
 #
 ${XFCONFQUERY} -c xfce4-desktop -l | ${GREP} "last-image$" | while read LASTIMAGE; do
   debug "MAIN LASTIMAGE: ${LASTIMAGE}"
+
+
+  # Set all LASTIMAGE values to random FILE using xfconf-query
+  CMD="${XFCONFQUERY} -c xfce4-desktop -p ${LASTIMAGE} -s ${FILE}"
+  debug "MAIN CMD: ${CMD}"
+
 done
 
 debug "MAIN *** end ***"
