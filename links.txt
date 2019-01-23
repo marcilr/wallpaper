@@ -8,6 +8,12 @@ Wallpaper related links
 
 Links
 =====
+How can I select random files from a directory in bash?
+https://stackoverflow.com/questions/414164/how-can-i-select-random-files-from-a-directory-in-bash
+
+List files with certain extensions with ls and grep
+https://stackoverflow.com/questions/1447625/list-files-with-certain-extensions-with-ls-and-grep
+
 set the desktop wallpaper under Xfce4
 Has xfconf-query syntax for setting wallpaper
 https://ubuntuincident.wordpress.com/2015/03/08/set-the-desktop-wallpaper-under-xfce4/
